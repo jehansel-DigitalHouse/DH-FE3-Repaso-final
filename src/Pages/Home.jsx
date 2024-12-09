@@ -1,5 +1,6 @@
 import Card from "../Components/Card";
 import { useCharStates } from "../Context/Context";
+import withErrorBoundary from "../withErrorBoundary";
 
 const Home = () => {
   const {
@@ -14,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withErrorBoundary(Home);
