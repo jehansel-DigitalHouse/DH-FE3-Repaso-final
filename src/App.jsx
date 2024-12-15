@@ -7,18 +7,18 @@ import Layout from "./Layouts/Layout";
 import { ToastContainer } from "react-toastify";
 import ErrorBoundary from "./ErrorBoundary";
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/favs" element={<Favs />} />
-          <Route path="/detail/:id" element={<Detail />} />
-        </Route>
-      </Routes>
-      <ToastContainer />
-    </>
-  );
+	return (
+		<>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route path="/" element={<Home />} />
+					<Route path="/favss" element={<Favs />} />
+					<Route path="/detail/:id" element={<Detail />} />
+				</Route>
+			</Routes>
+			<ToastContainer />
+		</>
+	);
 }
 
 export default App;
